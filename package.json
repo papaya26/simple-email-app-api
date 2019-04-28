@@ -1,0 +1,37 @@
+{
+  "name": "simple-email-app-api",
+  "version": "1.0.0",
+  "author": "Judd Sosa",
+  "description": "Simple Email Applcation  API",
+  "scripts": {
+    "dev": "nodemon src/index.js --exec babel-node",
+    "build": "rimraf dist && babel src --out-dir dist && npm run docs",
+    "start": "node dist/index.js",
+    "docs": "apidoc -i src/controllers/ -o ./docs/"
+  },
+  "dependencies": {
+    "apidoc": "^0.17.7",
+    "bcrypt": "^3.0.6",
+    "bluebird": "^3.5.4",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.10",
+    "mongoose": "^5.5.4",
+    "morgan": "^1.9.1",
+    "nodemailer": "^4.7.0",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.4.4",
+    "babel-preset-minify": "^0.5.0",
+    "nodemon": "^1.18.4",
+    "rimraf": "^2.6.3"
+  }
+}

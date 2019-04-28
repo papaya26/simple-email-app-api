@@ -1,0 +1,9 @@
+{
+  "name": "SEA API",
+  "version": "1.0.0",
+  "title": "Simple Email Application API",
+  "header": {
+    "title": "ABOUT",
+    "filename": "README.md"
+  }
+}
